@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="this_button"><p>THIS INTERIOR</p></div>
+        <ul>
+            <li style="text-decoration: underline;"><a>HOME</a></li>
+            <li><a>COLLECTION</a></li>
+            <li><a>ABOUT</a></li>
+            <li><a>CONTACTS</a></li>
+        </ul>
+        <label for="check" class="checkbtn" onclick="menu()"><i class="fa fa-bars" id="bars"></i></label>
+        <label for="cross" class="closebtn" onclick="back()"> <i class="fa fa-close"></i></label>
+    </header>
+    <div class="main">
+                <div class="text">
+                    <h2>Modern interior</h2><br>
+<pre>
+A full-Service residental &
+commercial interior design and
+staging company offering
+professional organizing &
+eco-services.
+</pre> <br> 
+<h3>Read more &#8594;</h3>
+            </div>                  
+                    <div class="images">
+                                <img src="photo1.png" alt="" class="big_photo"> 
+                                <div class="designer">
+                                        <img src="photo2.png" alt="" class="small_photo">
+                                        <div class="name">
+                                            <h4>Aliza Webber</h4>
+                                            <p style="font-weight:100; color:grey">Interior designer</p>
+                                        </div>
+                                        <div class="credit"> 
+                                            <p>Designed in 2021 by</p>
+                                            <p>Aliza Webber</p>
+                                        </div>
+                                </div>
+                    </div>
+            </div>
+    <footer class="footer">
+        <p>created by ankush_m_143 &copy;</p>
+    </footer>
+    <script>
+         function menu(){
+            var x= document.getElementById("header");
+            x.className= "newclass";
+            document.getElementById('bars').style['display']="none";
+            document.getElementsByTagName('body').style['display']="none";
+         }
+         function back(){
+            var x= document.getElementById("header");
+            x.classList.remove('newclass');
+            x.classList.add('header');
+            document.getElementById('bars').style['display']="block";
+         }
+    </script>
+</body>
+</html>
